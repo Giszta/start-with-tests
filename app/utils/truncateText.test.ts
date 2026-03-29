@@ -1,7 +1,6 @@
 import { describe, expect, test } from "vitest";
 import { truncateText } from "./truncateText";
 
-
 describe("truncateText", () => {
     test("zwraca ten sam tekst, gdy długość jest krótsza niż maxLength",()=>{
         expect(truncateText("Hej",10)).toBe("Hej");
