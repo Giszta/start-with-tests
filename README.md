@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Start with Tests
 
-## Getting Started
+To jest moje repozytorium do nauki testów w **React**, **Next.js** i **TypeScript**.
 
-First, run the development server:
+Traktuję ten projekt jako praktyczne miejsce do rozwijania umiejętności testowania frontendowych aplikacji — od prostych testów funkcji, przez testy komponentów, aż po bardziej realistyczne scenariusze UI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Po co powstało to repo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Chcę nauczyć się pisać testy w sposób uporządkowany i praktyczny.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Zamiast ograniczać się do teorii, buduję tutaj własne przykłady i ćwiczenia, żeby lepiej rozumieć:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- jak testować logikę w TypeScript
+- jak testować komponenty React
+- jak testować interakcje użytkownika
+- jak pisać testy do formularzy
+- jak sprawdzać różne stany UI
+- jak rozwijać dobre nawyki związane z jakością kodu
 
-## Learn More
+To repo jest częścią mojego procesu nauki.
 
-To learn more about Next.js, take a look at the following resources:
+## Czego się tutaj uczę
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+W repo skupiam się między innymi na:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- testach jednostkowych funkcji
+- testach komponentów React
+- testach formularzy
+- testowaniu zachowania z perspektywy użytkownika
+- pracy z Vitest i Testing Library
+- ćwiczeniu edge case’ów i bardziej praktycznych scenariuszy
 
-## Deploy on Vercel
+## Mój cel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Moim celem jest zbudowanie solidnych podstaw z testowania we frontendzie i nauczenie się pisania testów, które mają realną wartość, a nie tylko “są, żeby były”.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Chcę, żeby to repo pokazywało mój rozwój:
+- od prostych przykładów
+- do bardziej złożonych komponentów
+- i dalej do bardziej realistycznych przypadków użycia
+
+## Stack
+
+W projekcie używam:
+
+- Next.js
+- React
+- TypeScript
+- Vitest
+- Testing Library
+- user-event
+
+## Co można znaleźć w repo
+
+W repo znajdują się lub będą się pojawiać:
+
+### Testy funkcji
+Przykłady testowania logiki, np.:
+- walidacja
+- formatowanie danych
+- filtrowanie
+- sortowanie
+- paginacja
+- operacje na tablicach i stringach
+
+### Testy pod bardziej realne UI
+Ćwiczenia związane z typowymi problemami frontendowymi, np.:
+- search
+- selection
+- query params
+- grupowanie danych
+- walidacja formularzy
+
+### Testy komponentów
+Praktyczne komponenty, np.:
+- button
+- input
+- checkbox
+- dropdown
+- modal
+- tabs
+- accordion
+- toast
+- pagination
+- form
+- table
+
+## Jak traktuję to repo
+
+To nie jest gotowy produkcyjny projekt.
+
+To repo jest moją przestrzenią do nauki, eksperymentowania i budowania lepszego zrozumienia testów.  
+Zależy mi na tym, żeby z czasem było widać progres i coraz bardziej świadome podejście do testowania.
