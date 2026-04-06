@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playwright Practice App</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 24px;
+  }
+
+  .section {
+    margin-bottom: 32px;
+    padding: 16px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+  }
+
+  .error {
+    color: #c62828;
+  }
+
+  .success {
+    color: #2e7d32;
+  }
+
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-backdrop.hidden {
+    display: none;
+  }
+
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 320px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  label {
+    display: block;
+    margin-top: 8px;
+  }
+
+  input,
+  button,
+  select {
+    margin-top: 4px;
+  }
+</style>
+  </head>
+  <body>
+    <h1>Playwright Practice App</h1>
+
+    <section class="section" aria-label="Sekcja logowania">
+      <h2>Logowanie</h2>
+      <label for="login-email">Email</label>
+      <input id="login-email" type="email" />
+
+      <label for="login-password">Hasło</label>
+      <input id="login-password" type="password" />
+
+      <button id="login-button" type="button">Zaloguj</button>
+      <p id="login-message" aria-live="polite"></p>
+    </section>
+
+    <section class="section" aria-label="Sekcja formularza kontaktowego">
+      <h2>Formularz kontaktowy</h2>
+      <label for="contact-name">Imię</label>
+      <input id="contact-name" type="text" />
+
+      <label for="contact-message">Wiadomość</label>
+      <input id="contact-message" type="text" />
+
+      <button id="contact-submit" type="button">Wyślij</button>
+      <p id="contact-error" class="error" aria-live="polite"></p>
+      <p id="contact-success" class="success" aria-live="polite"></p>
+    </section>
+
+    <section class="section" aria-label="Sekcja filtrowania produktów">
+      <h2>Produkty</h2>
+      <label for="product-search">Szukaj produktu</label>
+      <input id="product-search" type="text" placeholder="Wpisz nazwę produktu" />
+
+      <ul id="product-list"></ul>
+    </section>
+
+    <section class="section" aria-label="Sekcja modala">
+      <h2>Modal</h2>
+      <button id="open-modal" type="button">Otwórz modal</button>
+    </section>
+
+    <div id="modal-backdrop" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="Okno potwierdzenia">
+      <div class="modal">
+        <h2>Czy na pewno?</h2>
+        <p>Ta operacja wymaga potwierdzenia.</p>
+        <button id="confirm-modal" type="button">Potwierdź</button>
+        <button id="close-modal" type="button">Zamknij</button>
+      </div>
+    </div>
+
+    <section class="section" aria-label="Sekcja użytkowników z API">
+      <h2>Użytkownicy</h2>
+      <button id="load-users" type="button">Załaduj użytkowników</button>
+      <p id="users-status" aria-live="polite"></p>
+      <ul id="users-list"></ul>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
